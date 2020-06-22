@@ -5,7 +5,7 @@ $number_of_files = count($files['picture']['name']);
 for ($i = 0; $i < $number_of_files; $i++) {
         $name = $files['picture']['name'][$i];
         $error = $files['picture']['error'][$i];
-        switch ($files['picture']['error'][$i]) {
+        switch ($error) {
             case 1:
                 echo "$name не удалось загрузить\n ERROR: The uploaded file exceeds the upload_max_filesize directive in php.ini\n";
                 break;
